@@ -10,7 +10,7 @@ import com.employee.managament.service.IStudentService;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"http://localhost:3000", "https://employee-management-frontend-smoky.vercel.app"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://employee-management-frontend-smoky.vercel.app/"})
 @RestController
 @RequestMapping("/students")
 @RequiredArgsConstructor
