@@ -10,7 +10,7 @@ import com.employee.managament.service.IStudentService;
 
 import java.util.List;
 
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://employee-management-frontend-smoky.vercel.app"})
 @RestController
 @RequestMapping("/students")
 @RequiredArgsConstructor
@@ -18,7 +18,7 @@ public class StudentController {
     
     private final IStudentService studentService;
 
-    @GetMapping("/")
+    @GetMapping
     public ResponseEntity<List<Student>> getStudents() {
         return ResponseEntity.ok(studentService.getStudents());
     }
